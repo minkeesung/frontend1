@@ -1,15 +1,14 @@
-import React from 'react'
-import createReactClass from 'create-react-class'
+import React from "react";
 
 const Decorators = [
   {
-    component: createReactClass({
+    component: React.createClass({
       render() {
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)} >
             <img src="http://res.cloudinary.com/ds1qfel8a/image/upload/v1497369678/Stock/left_qdsoo8.png"
-              id="leftButton" onClick={this.handleClick} alt="leftButton" />
+              id="leftButton" onClick={this.handleClick} />
           </button>
         );
       },
@@ -31,13 +30,13 @@ const Decorators = [
     position: 'CenterLeft'
   },
   {
-    component: createReactClass({
+    component: React.createClass({
       render() {
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)} >
             <img src="http://res.cloudinary.com/ds1qfel8a/image/upload/v1497369678/Stock/right_kamca8.png"
-              id="rightButton" onClick={this.handleClick} alt="rightButton"/>
+              id="rightButton" onClick={this.handleClick} />
           </button>
         );
       },
@@ -59,7 +58,7 @@ const Decorators = [
     position: 'CenterRight'
   },
   {
-    component: createReactClass({
+    component: React.createClass({
       render() {
         var self = this;
         var indexes = this.getIndexes(self.props.slideCount, self.props.slidesToScroll);
