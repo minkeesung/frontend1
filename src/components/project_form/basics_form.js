@@ -53,7 +53,7 @@ class BasicsForm extends Component {
                 <option disabled={true}>Select a category</option>
                 {this.props.categories.map(category => {
                   return <option value={category.id} key={category.id}>{category.name}</option>;
-                  })}
+
               </select>
             </div>
             <div className="project-basics-field">
@@ -62,7 +62,7 @@ class BasicsForm extends Component {
                 type="textarea"
                 value={this.props.state.details}
                 onChange={this.props.updateBasics('details')}
-                />
+
             </div>
             <div className="project-basics-field">
               <label className="project-basics-label">End on date</label>
@@ -70,7 +70,7 @@ class BasicsForm extends Component {
                 type="date"
                 value={this.props.state.end_date}
                 onChange={this.props.updateBasics('end_date')}
-                />
+
             </div>
             <div className="project-basics-field">
               <label className="project-basics-label">Funding goal</label>
@@ -79,7 +79,7 @@ class BasicsForm extends Component {
                 value={this.props.state.funding_goal}
                 placeholder="$0"
                 onChange={this.props.updateBasics('funding_goal')}
-                />
+
             </div>
             <button onClick={this.props.handleSubmit} className="save-project-button">Save project</button>
           </form>
