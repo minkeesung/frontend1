@@ -1,0 +1,114 @@
+@import "base/colors.scss";
+
+.project-form {
+  height: 100%;
+  display: flex;
+  padding-top: 42px;
+  padding-bottom: 150px;
+  height: 100%;
+  flex-direction: column;
+  background-color: $sand;
+}
+
+.project-form-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-form-nav li {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  // padding: 20px;
+  background-color: white;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
+}
+
+.basics-button {
+  border-left: 1px solid $light-gray;
+}
+
+.fa-check-circle {
+  position: relative;
+  margin-top: 3%;
+  color: #CECBC7;
+}
+
+.inactive-button {
+  background-color: white;
+  color: $dark-blue;
+  height: 100%;
+  padding: 20px;
+}
+
+.active-button {
+  color: $blue;
+  background-color: $white-blue;
+  height: 100%;
+  padding: 20px;
+}
+
+.project-form-nav button:hover{
+  color: $blue;
+  background-color: white;
+}
+
+.project-form-nav button:focus {
+  color: $blue;
+  background-color: $white-blue;
+}
+
+.basics-form-container,
+.rewards-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-gray;
+}
+
+.basics-form-copy,
+.rewards-form-copy {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.basics-form-copy h1,
+.rewards-form-copy h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.basics-form-copy p,
+.rewards-form-copy p {
+  font-size: 22px;
+  text-align: center;
+  width: 630px;
+}
+
+.save-project-button {
+  border-radius: 6px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+  // width: 90px;
+}
+
+.project-errors {
+  color: #fd003b;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.project-errors li {
+  padding: 4px;
+}
